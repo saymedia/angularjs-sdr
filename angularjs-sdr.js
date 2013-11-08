@@ -91,6 +91,8 @@ OTHER DEALINGS IN THE SOFTWARE.
                         var clientRoute = routes[path];
                         next.controller = serverRoute.controller;
                         next.template = serverRoute.template;
+                        next.pathParams = serverRoute.pathParams;
+                        next.params = angular.copy(next.pathParams);
                         next.locals = serverRoute.locals;
                         next.locals.$template = next.template;
                         next.$$route = clientRoute;
