@@ -153,6 +153,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 
                 $rootScope.$on('$locationChangeSuccess', updateRoute);
 
+                return $route;
+
             };
         }
     );
